@@ -1,0 +1,160 @@
+<!--Javiera Lizana & Maximiliano Lasmar-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="estilo.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Únete</title>
+</head>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+    <div class="container-fluid">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="nosotros.html">Nosotros</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="store.html">Store</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="indexalternativo.html">Inicio</a>
+        </li>
+      </ul>
+      <h1 style="margin-right: 0%; color: grey;">ADOPT A BUDDY</h1>
+      <!-- Boton para desplegar ventana de ingreso de sesion  -->
+      <button onclick="document.getElementById('id01').style.display='block'" class="btn btn-primary" style="margin-right: -25%;">Ingresar</button>
+
+      <!-- El Modal -->
+      <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'"
+      class="close" title="Close Modal">&times;</span>
+      
+        <!-- Contenido del Modal -->
+        <form class="modal-content animate" action="#" style="background-color: rgb(224, 222, 222);">
+          <div class="imgcontainer" style="text-align: center;">
+            <img src="perro_siete.jpg" alt="Perritos" class="avatar">
+          </div>
+      
+          <div class="container" style="text-align: center;">
+            <label for="rut_usuario" style="text-align: center; margin-left: 4%;"><b>RUT</b></label>
+            <input type="text" placeholder="Ingrese su RUT" name="rut_usuario" required><br>
+            <br>
+            <label for="contraseña" style="text-align: center; margin-left: -4%;"><b>contraseña</b></label>
+            <input type="password" placeholder="Ingrese contraseña" name="contraseña" required><br>
+            <br>
+            <button type="submit" class="btn btn-dark">Ingresar</button><br>
+            <label>
+              <br>
+              <input type="checkbox" checked="checked" name="Recordarme"> Recordarme
+            </label><br>
+          </div>
+      
+            <div class="container" style="background-color:cornflowerblue; text-align: center;">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn; btn-dark">Cancelar</button>
+              <span class="contraseña">   ¿Olvido su <a href="#">contraseña?</a></span>
+            </div>
+        </form>
+      </div>
+      <img src="carrito_compras.png"  alt="carrito" style="margin-right: 1%; width: 3%; height: 3%;">
+
+    </div>
+  </nav>
+<body style="background-color: #6778d1;">
+    
+    <div id="pagina_unete">
+    <fieldset>
+        <form action="envioexitoso.html" method="" enctype="multipart/form-data" name="formularioinscripcion">
+        <legend style="color: rgb(78, 54, 54);"><b>Formulario de Inscripción</b></legend><br>
+      <div id="box_pregunta">
+        
+        <label for="formularioinscripcion"><b>Nombre</b>   </label>
+        <input type="text" name="nombre" placeholder="Ingrese su nombre" value="" style="height: 30px; width: 200px;" required><br>
+      </div>
+      <div id="box_pregunta">
+        <label for="formularioinscripcion"><b>Apellidos</b></label>
+        <input type="text" name="apellidos" placeholder="Ingrese sus apellidos" value="" style="height: 30px; width: 200px;" required><br>
+      </div>
+      <div id="box_pregunta">
+        <label for="formularioinscripcion"><b>Edad</b></label>
+        <input type="number" name="edad" placeholder="Ingrese su edad" min="0" max="120" value="" style="height: 30px; width: 200px;" required><br>
+      </div>
+      <div id="box_pregunta">
+        <label for="formularioinscripcion"><b>RUT</b></label>
+        <input type="text" name="rut" placeholder="xxxxxxxx-x" value="" style="height: 30px; width: 200px;" required><br>
+      </div>
+      <div id="box_pregunta">
+        <label for="formularioinscripcion"><b>Correo electrónico</b></label>
+        <input type="email" name="correo" placeholder="Ingrese su correo" value="" style="height: 30px; width: 200px;" required><br>
+      </div>
+        <label for="formularioinscripcion" style="margin-left: -12%;"><b>Fecha primera facturación </b></label>
+        <input type="date" name="facturación" placeholder="" value="" style="height: 30px; width: 200px;" min="2022-05-05" max="2022-06-05" required ><br><br>
+      <div id="box_pregunta">
+        <label for="formularioinscripcion"><b>Monto primera facturación</b></label>
+        <input type="number" name="montofacturacion" placeholder="Ingrese monto a facturar" min="0" value="" style="height: 30px; width: 200px;" required><br>
+      </div>
+      <div id="box_pregunta">
+        <label for="formularioinscripcion"><b>Ingrese contraseña</b></label>
+        <input type="password" name="contraseña" placeholder="Ingrese su contraseña" value="" style="height: 30px; width: 200px;" required><br>
+      </div>
+       
+      
+      <div class="btn-group btn-group-lg">
+        <button type="submit" class="btn btn-dark">ENVIAR</button>
+      </div>  
+
+        </form>
+
+      <br>
+      <!-- Boton para desplegar ventana de ingreso de sesion  -->
+      <button onclick="document.getElementById('id01').style.display='block'" class="btn btn-dark" type="button" style="width: 6.4%; height: 48px;">INGRESAR</button>
+
+      <!-- El Modal -->
+      <div id="id01" class="modal">
+        <span onclick="document.getElementById('id01').style.display='none'"
+      class="close" title="Close Modal">&times;</span>
+
+        <!-- Contenido del Modal -->
+        <form class="modal-content animate" action="#" style="background-color: rgb(224, 222, 222);">
+          <div class="imgcontainer">
+            <img src="perro_siete.jpg" alt="Perritos" class="avatar">
+          </div>
+
+          <div class="container">
+            <label for="rut_usuario" style="text-align: center; margin-left: 4%;"><b>RUT</b></label>
+            <input type="text" placeholder="Ingrese su RUT" name="rut_usuario" required><br>
+            <br>
+            <label for="contraseña" style="text-align: center; margin-left: -4%;"><b>contraseña</b></label>
+            <input type="password" placeholder="Ingrese contraseña" name="contraseña" required><br>
+            <br>
+            <button type="submit" class="btn btn-dark">Ingresar</button>
+            <br>
+            <label>
+              <input type="checkbox" checked="checked" name="Recordarme"> Recordarme
+            </label><br>
+          </div>
+
+            <div class="container" style="background-color:cornflowerblue">
+              <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn; btn-dark">Cancelar</button>
+              <span class="contraseña">  ¿Olvidó su <a href="#">contraseña?</a></span>
+            </div>
+          </form>
+        </div>
+      
+    
+    </fieldset>    
+
+          
+
+    </div>
+
+
+    
+    <div id="piedepagina">
+        <p>Desarrolladores: Javiera Lizana & Maximiliano Lasmar<br>
+        <a>Todos los derechos reservados.</a></p>
+    </div>
+</body>
+</html>
